@@ -23,7 +23,7 @@ const GalleryItem: React.FC<GalleryItemProps> = ({
   const handleRemoveImage = (imageKey: string | undefined) => {
     if (imageKey) {
       removeImage(imageKey)
-        .then(() => console.log('Image removed!'))
+        .then()
         .catch((error) =>
           console.error('Error handling image removal:', error)
         );

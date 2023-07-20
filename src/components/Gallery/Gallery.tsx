@@ -24,7 +24,6 @@ const Gallery = () => {
           nextToken: nextToken,
         });
 
-        console.log(response.hasNextToken);
         if (response.hasNextToken) {
           nextTokenRef.current = response.nextToken;
         } else {
@@ -40,7 +39,7 @@ const Gallery = () => {
         );
         setImages(s3Images);
       } catch (error) {
-        console.log(error);
+        console.error(error);
       } finally {
         setLoading(false);
       }
@@ -60,7 +59,7 @@ const Gallery = () => {
 
   const handleNext = () => {
     fetchImages(nextTokenRef.current)
-      .then(() => console.log('Next images!'))
+      .then()
       .catch((error) => console.error('Error handling image removal:', error));
   };
 
