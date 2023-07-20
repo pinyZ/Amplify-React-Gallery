@@ -53,7 +53,7 @@ const Gallery = () => {
 
   const handleRefresh = () => {
     fetchImages()
-      .then(() =>  hasNextPageRef.current = true)
+      .then(() => (hasNextPageRef.current = true))
       .catch((error) => console.error('Error handling image removal:', error));
   };
 
@@ -99,12 +99,20 @@ const Gallery = () => {
             ))}
         </div>
       </div>
-      <div className="flex justify-center gap-4">
-        <Button variation="primary" onClick={() => handleRefresh()}>
+      <div className="flex justify-center">
+        <Button
+          className="m-4"
+          variation="primary"
+          onClick={() => handleRefresh()}
+        >
           Refresh
         </Button>
         {hasNextPageRef.current ? (
-          <Button variation="primary" onClick={() => handleNext()}>
+          <Button
+            className="m-4"
+            variation="primary"
+            onClick={() => handleNext()}
+          >
             Next
           </Button>
         ) : null}
