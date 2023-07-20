@@ -5,7 +5,7 @@ import GalleryItem from './GalleryItem';
 import '@aws-amplify/ui-react/styles.css';
 import { Button } from '@aws-amplify/ui-react';
 
-const PAGE_SIZE = 3;
+const PAGE_SIZE = 4;
 
 const Gallery = () => {
   const [imageKeys, setImageKeys] = useState<S3ProviderListOutputItem[]>([]);
