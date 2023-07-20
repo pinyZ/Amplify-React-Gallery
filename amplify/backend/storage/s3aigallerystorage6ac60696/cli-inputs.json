@@ -1,0 +1,14 @@
+{
+  "resourceName": "s3aigallerystorage6ac60696",
+  "bucketName": "aigallery-storage-6ac60696",
+  "policyUUID": "0c6f56b2",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ]
+}
