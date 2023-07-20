@@ -2,10 +2,15 @@
 
 React + Typescript + Vite
 
-## setup
+## hosting setup
 
+[Link](https://main.dyyy4sa12s27z.amplifyapp.com)
+
+
+## local setup
+
+Install dependencies
 `npm i` or `yarn`
 
-## run
-
+Run development serve
 `npm run dev`
