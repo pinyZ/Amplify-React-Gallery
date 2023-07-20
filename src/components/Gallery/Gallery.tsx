@@ -99,9 +99,8 @@ const Gallery = () => {
             ))}
         </div>
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center m-2 gap-4">
         <Button
-          className="m-4"
           variation="primary"
           onClick={() => handleRefresh()}
         >
@@ -109,7 +108,6 @@ const Gallery = () => {
         </Button>
         {hasNextPageRef.current ? (
           <Button
-            className="m-4"
             variation="primary"
             onClick={() => handleNext()}
           >
